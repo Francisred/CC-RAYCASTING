@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add webapp capability-->
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="transparent" />
+    <title>RAYCASTERCC</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>"
+    />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: black;
+      }
+      canvas {
+        display: block;
+      }
+      .controls {
+        display: none !important;
+      }
+      #startOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+      }
+      #startOverlay h2 {
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+      }
+      #info {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="startOverlay">
+      <h2>begin sound toy</h2>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="controls" style="display: none">
+      <div>
+        <label for="scale">Scale:</label>
+        <input
+          type="range"
+          id="scale"
+          min="0.1"
+          max="2"
+          step="0.1"
+          value="1.8"
+        />
+        <span id="scaleValue">1.8</span>
+      </div>
+      <div>
+        <label for="circleSize">Circle Size:</label>
+        <input
+          type="range"
+          id="circleSize"
+          min="1"
+          max="300"
+          step="1"
+          value="48"
+        />
+        <span id="circleSizeValue">48</span>
+      </div>
+      <div>
+        <label for="rayThickness">Ray Thickness:</label>
+        <input
+          type="range"
+          id="rayThickness"
+          min="1"
+          max="30"
+          step="0.5"
+          value="1"
+        />
+        <span id="rayThicknessValue">1</span>
+      </div>
+      <div>
+        <label for="fadeSpeed">Fade Speed:</label>
+        <input
+          type="range"
+          id="fadeSpeed"
+          min="0.01"
+          max="1"
+          step="0.01"
+          value="0.1"
+        />
+        <span id="fadeSpeedValue">0.1</span>
+      </div>
+      <div>
+        <label for="stepSpeed">Step Speed:</label>
+        <input
+          type="range"
+          id="stepSpeed"
+          min="1"
+          max="40"
+          step="0.5"
+          value="20"
+        />
+        <span id="stepSpeedValue">20</span>
+      </div>
+      <div>
+        <label for="rayLength">Ray Length:</label>
+        <input
+          type="range"
+          id="rayLength"
+          min="0.1"
+          max="0.8"
+          step="0.01"
+          value="0.5"
+        />
+        <span id="rayLengthValue">0.5</span>
+      </div>
+      <div>
+        <label for="pushForce">Push Force:</label>
+        <input
+          type="range"
+          id="pushForce"
+          min="1"
+          max="20"
+          step="0.5"
+          value="14.5"
+        />
+        <span id="pushForceValue">14.5</span>
+      </div>
+      <div>
+        <label for="outwardForce">Outward Force:</label>
+        <input
+          type="range"
+          id="outwardForce"
+          min="0"
+          max="50"
+          step="1"
+          value="7"
+        />
+        <span id="outwardForceValue">7</span>
+      </div>
+      <div>
+        <label for="tickFrequency">Tick Every:</label>
+        <input
+          type="range"
+          id="tickFrequency"
+          min="1"
+          max="4"
+          step="1"
+          value="2"
+        />
+        <span id="tickFrequencyValue">2</span>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <!-- Load modular JavaScript files in dependency order -->
+    <script src="js/Constants.js"></script>
+    <script src="js/Utils.js"></script>
+    <script src="js/AnimationController.js"></script>
+    <script src="js/AudioManager.js"></script>
+    <script src="js/UIController.js"></script>
+    <script src="js/ObstacleManager.js"></script>
+    <script src="js/InputHandler.js"></script>
+    <script src="js/RaycastingSystem.js"></script>
+    <script src="js/Renderer.js"></script>
+    <script src="js/App.js"></script>
+    <script>
+      document
+        .getElementById("startOverlay")
+        .addEventListener("click", async () => {
+          await Tone.start();
+          document.getElementById("startOverlay").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
