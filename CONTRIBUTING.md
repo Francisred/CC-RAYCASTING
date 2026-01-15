@@ -61,7 +61,7 @@ GitHub Copilot is an AI-powered code completion tool that can significantly spee
 - It should show a checkmark when active
 - If you see a warning icon, click it to troubleshoot
 
-> **Note:** GitHub Copilot requires a subscription. You can start a free trial or use it free if you're a student, teacher, or open source maintainer. Learn more at [https://github.com/features/copilot](https://github.com/features/copilot)
+> **Note:** GitHub Copilot requires a subscription. Learn more about pricing and access at [https://github.com/features/copilot](https://github.com/features/copilot)
 
 ## Recommended Extensions
 
@@ -71,7 +71,6 @@ When you open this project in VS Code, you'll be prompted to install recommended
 - **GitHub Copilot Chat** - Interactive AI coding assistant
 - **ESLint** - JavaScript linting
 - **Prettier** - Code formatter
-- **Live Server** - Local development server
 - **JavaScript Debugger** - Enhanced debugging tools
 
 Alternatively, install them manually from the Extensions marketplace.

@@ -4,7 +4,6 @@
     "github.copilot-chat",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "ritwickdey.liveserver",
     "ms-vscode.vscode-js-profile-flame"
   ]
 }

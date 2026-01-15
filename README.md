@@ -145,7 +145,7 @@ code .
 When you open the project, VS Code will prompt you to install recommended extensions. Click "Install All" to get:
 - **GitHub Copilot** - AI-powered code completion
 - **GitHub Copilot Chat** - Interactive AI assistant
-- ESLint, Prettier, Live Server, and more
+- ESLint, Prettier, and more
 
 #### Step 4: Sign in to GitHub Copilot
 1. Click the Copilot icon in the status bar

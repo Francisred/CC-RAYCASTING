@@ -6,7 +6,8 @@
       "request": "launch",
       "name": "Launch Chrome against localhost",
       "url": "http://localhost:5173",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${workspaceFolder}",
+      "comment": "Ensure Vite dev server is running on port 5173 before debugging"
     }
   ]
 }
