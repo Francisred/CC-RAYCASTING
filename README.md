@@ -104,4 +104,66 @@ The JavaScript files are loaded in dependency order in `index.html`:
 
 ## Usage
 
-The application initializes automatically when the DOM is ready. All classes are instantiated and connected in the `App` constructor. 
+The application initializes automatically when the DOM is ready. All classes are instantiated and connected in the `App` constructor.
+
+## Getting Started with Development
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Francisred/CC-RAYCASTING.git
+   cd CC-RAYCASTING
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   - Navigate to `http://localhost:5173`
+
+### Setting Up Visual Studio Code
+
+This project is optimized for development with Visual Studio Code and GitHub Copilot.
+
+#### Step 1: Install VS Code
+Download from [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+#### Step 2: Open Project
+```bash
+code .
+```
+
+#### Step 3: Install Recommended Extensions
+When you open the project, VS Code will prompt you to install recommended extensions. Click "Install All" to get:
+- **GitHub Copilot** - AI-powered code completion
+- **GitHub Copilot Chat** - Interactive AI assistant
+- ESLint, Prettier, Live Server, and more
+
+#### Step 4: Sign in to GitHub Copilot
+1. Click the Copilot icon in the status bar
+2. Sign in with your GitHub account
+3. Start coding with AI assistance!
+
+> **New to GitHub Copilot?** Check out our [CONTRIBUTING.md](CONTRIBUTING.md) for a complete setup guide, tips, and best practices.
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on:
+- Setting up your development environment
+- Installing and using GitHub Copilot
+- Project structure and code style
+- Making and submitting changes 
