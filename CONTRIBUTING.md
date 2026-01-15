@@ -169,9 +169,13 @@ CC-RAYCASTING/
 3. Use Console, Sources, and Network tabs for debugging
 
 ### VS Code Debugging
-1. Press `F5` to start debugging
-2. Set breakpoints by clicking left of line numbers
-3. Use Debug Console for live code evaluation
+1. Start the Vite dev server first: `npm run dev`
+2. Verify it's running on port 5173 (check terminal output)
+3. Press `F5` in VS Code to start debugging
+4. Set breakpoints by clicking left of line numbers
+5. Use Debug Console for live code evaluation
+
+> **Note:** The debug configuration is set up for port 5173 (Vite's default). If your dev server runs on a different port, update `.vscode/launch.json` accordingly.
 
 ## Code Style
 
